@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Queries</title>
+    <style>
+        .container {
+
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 'navbar navbar navbar navbar' 'section section section aside'
+                'footer footer footer footer';
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+
+                background-color: cyan;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            body {
+
+                background-color: blueviolet;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            body {
+
+                background-color: yellow;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+
+            span {
+                display: block;
+                text-align: center;
+            }
+
+
+        }
+
+
+
+
+        @media (min-width: 800px) {
+            body {
+
+                background-color: green;
+            }
+        }
+
+        .border {
+            border: 2px solid black;
+            padding: 23px 23px;
+            background-color: cyan;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="border">
+            <span>
+                Home
+            </span>
+            <span>About Us</span>
+            <span>Contact Us</span>
+            <span>Welcome</span>
+        </nav>
+        <section class="border">
+            <h2>Learn css in urdu </h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit magnam quibusdam reprehenderit.</p>
+        </section>
+        <aside class="border">
+            <h1>Contact Us Now</h1>
+        </aside>
+    </div>
+    <footer class="border">
+        copyright codewithfiza2023
+    </footer>
+
+</body>
+
+</html>

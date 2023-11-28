@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and tax shadow</title>
+</head>
+<style>
+    .contaner {
+        display: flex;
+    }
+
+    .cart {
+        padding: 23px 12px;
+        border: 2px solid red;
+        margin: 10px;
+        background-color: grey;
+        /* box-shadow: 5px 6px green; */
+        /* when negative shodow above */
+        /* box-shadow: 5px 5px 11px yellowgreen; */
+        /* box-shadow: 5px 5px 10px 10px blue; */
+        /* box shadow: offset x offset y blur rradius spread radius color;
+        when inside the box */
+        /* box-shadow: inset 3px 5px green; */
+        /* multiple shadow */
+        /* box-shadow: 10px 5px green, 10px 6px red; */
+
+    }
+    .cart h2{
+        text-shadow: 3px 4px 3px black;
+    }
+</style>
+
+<body>
+    <div class="contaner">
+        <div class="cart" id="cart-1">
+            <h2>card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perferendis eius ipsum molestias,
+                pariatur cum odio facere, libero omnis aliquid ea nam adipisci magnam atque recusandae accusantium error
+                nostrum, a ad voluptates provident! Eligendi.</p>
+        </div>
+        <div class="cart" id="cart-2">
+            <h2>card2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum perferendis a minus cumque! Alias
+                adipisci, perferendis qui, dignissimos maiores est suscipit similique eaque in recusandae et dolorum
+                odit molestiae veritatis blanditiis? Neque, natus id?</p>
+        </div>
+        <div class="cart" id="cart-3">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, vitae. Odit, magni! Suscipit reprehenderit
+                ullam iusto repellendus. Cum inventore rerum voluptatum magni ullam ducimus tempora aperiam quisquam
+                voluptatem, blanditiis ipsum excepturi enim molestias suscipit.</p>
+        </div>
+    </div>
+</body>
+
+</html>

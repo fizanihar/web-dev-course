@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interation using alert confirm and prompts</title>
+</head>
+<body>
+    <div class="container">
+        This is a page
+    </div>
+    <script>
+    //   Alert in in-browser javascript   gives a message on a window call modal which means until this is closed you can do nothing with the page
+    //  alert returns nothing  
+    // alert("This is a message");
+    // // it will prompt the user and whichever you enter will be stored in your name var
+    // let name = prompt("What is your name?" , "Guest");
+    // console.log(name);
+    // let deletepost = confirm("Do you really want to delete this post?");
+    // console.log(deletepost);
+    // will return true or false or if you want to leave any msg
+    // if(deletepost){
+    //     console.log("your msg has been deleted successfully");
+    // }
+    // else{
+    //     console.log("your msg has not been delted");
+    // }
+    // challege
+    let name = prompt("Enter your Name " , "Guest");
+    let age = prompt(`${name} Enter your Age `, "Age"  );
+    if(age>18){
+        alert("Access Granted");
+        console.log("Welcome to Company");
+    }
+    else{
+        alert("Access Denied");
+        console.log("Sorry");
+    }
+
+
+    </script>
+</body>
+</html>

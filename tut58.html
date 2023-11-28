@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    Time now is
+        <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is tutorial 58");
+        // it allows us to run the function once after thhe interval of time
+        // setTimeout(() => {
+            
+        // }, timeout);.
+        // Allows us to run the function repeatedly after the interval of time
+        // clearTimeout
+        function greet(name, byeTex){
+            console.log("Hello good morning "+name+ " "+byeTex)
+        }
+    //   setTimeout(greet,5000,"fiza" , "Take care");
+    //   timeout = setTimeout(greet,5000,"fiza" , "Take care");
+    //   It returns a uniques ID 1
+    //   console.log(timeout);
+    //   It clears the timeout
+    //   clearTimeout(timeout);
+    //   setTimeout(greet,5000,"fiza" , "Take care"); It is wrong as it calling greet function inside the  settime out function
+    // when settime out ko clear krna ho we use cleartimeout 
+    // Same as settimeout nut it will run after ebery 5seconds
+    // setInterval(greet,5000,"fiza" ,"goodnight");
+    // // interinterval = setInterval(greet,5000,"fiza" ,"goodnight");
+    // clearInterval(interinterval);
+    function displaytime(){
+        time = new Date();
+        console.log(time)
+        document.getElementById("time").innerHTML = time;
+    }
+    setInterval(displaytime , 1000 );
+    </script>
+</body>
+</html>

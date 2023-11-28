@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes</title>
+</head>
+<style>
+    .container{
+        padding: 34px 23px;
+        display: block;
+        width: 233px;
+        margin: auto;
+    }
+    input{
+        display:block;
+    }
+    input[type='text']{
+        border: 2px solid red;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    a[target]{
+        color: violet;
+    }
+    a[target='_self']{
+        color:aqua;
+    }
+    /* this will apply css for the third child */
+    li:nth-child(3){
+        color: brown;
+    }
+    /* only apply on even item */
+    li:nth-child(2n+0){
+        color: pink;
+    }
+    /* only odd */
+    li:nth-child(odd){
+        color: blue;
+    }
+</style>
+<body>
+    <h1>Attribute and nth child pseudo Selectors</h1>
+    <div class="container">
+        <a href="http://google.com" target="_blank">Click here</a>
+        <a href="http://facebook.com" target="_self">facebook</a>
+        <form action="" class="form control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter passwaord">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+        <li class="item" id="item-1">item 1</li>
+        <li class="item" id="item-2">item 2</li>
+        <li class="item" id="item-3">itwm 3</li>
+        <li class="item" id="item-4">itwm 4</li>
+        </ul>
+    </div>
+</body>
+</html>

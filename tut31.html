@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+</head>
+<style>
+    h1{
+   background-color:red;
+   color: #000;
+   font-weight: bold;
+   text-align: center;
+    }
+    div > p{   
+        color: yellow;
+        background-color: green;    
+        font-weight: bold;
+        /* this sign means that div andr direct waly p pr lagy only */
+    }
+    div + p{
+        /* aisa paragaragh jis ka pechla sibling div ho */
+        color: red;
+    }
+</style>
+<body>
+    <h1>This is more on sleectors</h1>
+  
+    <div class="container">
+        <div class="row">
+        <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost parGRAPH</p>
+
+
+   
+</body>
+</html>

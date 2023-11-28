@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with json in Js</title>
+</head> 
+<!-- Json its s format in js to store and transfer data -->
+<body>
+    <div class="conyainer">
+
+    </div>
+    <script>
+        let jsonobj = {
+            name: " fiza",
+            channel: "code with fiza",
+            friend : "she has no frnds" , 
+            food : "biryani",
+
+        };
+        console.log(jsonobj);
+        // convert a valid js object to json string
+        let myjsonstr = JSON.stringify(jsonobj);
+        console.log(myjsonstr);
+        let fiza = myjsonstr.replace("fiza","good girl");
+        console.log(fiza);
+        // parse convert a valid json string to js object
+        let newjsononj = JSON.parse(myjsonstr);
+        console.log(newjsononj);
+    </script>
+</body>
+</html>

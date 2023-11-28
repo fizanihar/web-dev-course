@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <!--best way to align items inside a css Box-->
+    <!--flexbox=flexible+box-->
+</head>
+<style>
+  .container{
+    height: 500px;
+    width: 1200px;
+    border: 2px solid red;
+    display: flex;
+    flex-flow: row-reverse wrap;
+     justify-content: space-between;
+     align-items: stretch;
+  }
+  .item{
+    background-color: tomato;
+    border: 2px solid pink;
+    margin: 10px;
+    padding: 3px;
+    width: 150px;
+    height: 50px;
+  }
+  #item-1{
+    flex-grow: 3;
+  }
+</style>
+<body>
+    <h1>This is flexbox tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav" class="container">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+            <li>More about us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+ <script>
+    // Full form of Dom is Document Object MOdel that means whatever you write in your body
+    let main = document.getElementById("Main");
+    console.log(main);
+    let nav = document.getElementById("nav");
+    console.log(nav);
+    let container = document.getElementsByClassName("container");
+    console.log(container);
+    // let sel = document.querySelector(".container");
+    // console.log(sel);
+    // let sels = document.querySelector("#nav");
+    // console.log(sels);
+    // it returns First li
+    // let sels = document.querySelector("#nav>li");
+    // console.log(sels);
+    // Will return All li inside Nav
+    // let sels = document.querySelectorAll("#nav>li");
+    // console.log(sels);
+ </script>
+</body>
+</html>
